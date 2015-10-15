@@ -1,0 +1,83 @@
+fileTypes: [fate]
+name: Fate
+patterns:
+- {include: '#fate'}
+repository:
+  comment: {match: (#.*$), name: comment.line.number-sign}
+  constant:
+    patterns:
+    - {match: \b(self|nil|true|false)\b, name: constant.language}
+    - {match: '(([1-9][0-9]*|[0-9])(\.[0-9]+)?([eE][+-]?[0-9])?)', name: constant.numeric}
+  expression:
+    patterns:
+    - {include: '#string'}
+    - {include: '#keyword'}
+    - {include: '#constant'}
+    - {include: '#identifier'}
+  fate:
+    patterns:
+    - {include: '#comment'}
+    - {include: '#statement'}
+    - {include: '#expression'}
+  identifier: {match: '\b((\w|[$_])(\w|\d|[$_])*)\b', name: variable.parameter}
+  interpolation:
+    patterns:
+    - {match: '\%([1-9][0-9]*|[0-9])(\|(\w|[$_])(\w|\d|[$_])*)*;?', name: variable.parameter.index}
+    - {match: '\%((\w|[$_])(\w|\d|[$_])*)(\|(\w|[$_])(\w|\d|[$_])*)*;?', name: variable.parameter.name}
+    - {match: '\%(\|(\w|[$_])(\w|\d|[$_-])*)*;?', name: variable.parameter.position}
+  keyword:
+    patterns:
+    - {match: \b(and|or|like|mod|not|if|unless|else)\b, name: keyword.operator}
+    - {match: '([\-&~?+*\/|:@=(),\.\[\]<>{}])', name: keyword.operator}
+  ml-string-double-quoted:
+    begin: \"\"\"
+    beginCaptures:
+      '0': {name: punctuation.definition.string.begin}
+    end: \"\"\"
+    endCaptures:
+      '0': {name: punctuation.definition.string.end}
+    name: string.quoted.triple
+    patterns:
+    - {include: '#interpolation'}
+  ml-string-single-quoted:
+    begin: ''''''''
+    beginCaptures:
+      '0': {name: punctuation.definition.string.begin}
+    end: ''''''''
+    endCaptures:
+      '0': {name: punctuation.definition.string.end}
+    name: string.quoted.triple
+    patterns:
+    - {include: '#interpolation'}
+  statement:
+    patterns:
+    - {match: \b(for|def|when|from|import|export|let|if|unless|do|with|as|in|else|end|where)\b,
+      name: keyword.control}
+  string:
+    patterns:
+    - {include: '#ml-string-double-quoted'}
+    - {include: '#ml-string-single-quoted'}
+    - {include: '#string-double-quoted'}
+    - {include: '#string-single-quoted'}
+  string-double-quoted:
+    begin: '"'
+    beginCaptures:
+      '0': {name: punctuation.definition.string.begin}
+    end: '"'
+    endCaptures:
+      '0': {name: punctuation.definition.string.end}
+    name: string.quoted.double
+    patterns:
+    - {include: '#interpolation'}
+  string-single-quoted:
+    begin: ''''
+    beginCaptures:
+      '0': {name: punctuation.definition.string.begin}
+    end: ''''
+    endCaptures:
+      '0': {name: punctuation.definition.string.end}
+    name: string.quoted.single
+    patterns:
+    - {include: '#interpolation'}
+scopeName: source.fate
+uuid: b059aca9-7261-413b-a3f7-1c453843ca89

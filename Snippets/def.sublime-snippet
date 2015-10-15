@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[def ${1:func_name}
+	$0
+end]]></content>
+  <tabTrigger>def</tabTrigger>
+  <scope>source.fate - meta.tag.other.html</scope>
+  <description>def … end</description>
+</snippet>

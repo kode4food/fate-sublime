@@ -1,0 +1,29 @@
+from string import title
+let sum = mutable(0)
+sum.set((x)=>x + 99)
+
+if years = 99
+  emit "something"
+end
+
+def renderList(items, block)
+  for item in items
+    emit item | block | title
+  end
+end
+
+fn some_func(x,y) when x > 10
+  x + y
+end
+
+def renderList(items) where not items  # guard wins
+  "nothing to render"
+end
+
+renderList(people, item)
+  item | "their name is %name and they are %age|years old"
+end
+
+export renderList as something,
+       renderThat as somethingElse
+

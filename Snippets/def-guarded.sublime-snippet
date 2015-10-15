@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[def ${1:func_name}(${2:args}) where ${3:guard}
+	$0
+end]]></content>
+  <tabTrigger>defw</tabTrigger>
+  <scope>source.fate - meta.tag.other.html</scope>
+  <description>def() where … end</description>
+</snippet>

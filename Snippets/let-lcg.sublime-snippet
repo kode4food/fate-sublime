@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[let ${1:var} = [${2:expr} for ${3:item} in ${4:list} where ${5:guard}]]]></content>
+  <tabTrigger>letlcg</tabTrigger>
+  <scope>source.fate - meta.tag.other.html</scope>
+  <description>let … = [for … in … where]</description>
+</snippet>

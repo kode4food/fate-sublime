@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[for ${1:item} in ${2:list}
+	$3
+else
+	$0
+end]]></content>
+  <tabTrigger>fore</tabTrigger>
+  <scope>source.fate - meta.tag.other.html</scope>
+  <description>for … else … end</description>
+</snippet>
