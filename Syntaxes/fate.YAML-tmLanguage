@@ -51,7 +51,7 @@ repository:
     - {include: '#interpolation'}
   statement:
     patterns:
-    - {match: \b(for|def|when|from|import|export|let|if|unless|do|with|as|in|else|end|where)\b,
+    - {match: \b(for|def|when|from|import|export|let|if|unless|do|with|as|in|else|end|where|select)\b,
       name: keyword.control}
   string:
     patterns:
