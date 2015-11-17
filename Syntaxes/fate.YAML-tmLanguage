@@ -11,6 +11,7 @@ repository:
   expression:
     patterns:
     - {include: '#string'}
+    - {include: '#regex'}
     - {include: '#keyword'}
     - {include: '#constant'}
     - {include: '#identifier'}
@@ -79,5 +80,13 @@ repository:
     name: string.quoted.single
     patterns:
     - {include: '#interpolation'}
+  regex:
+    begin: '/'
+    beginCaptures:
+      '0': {name: punctuation.definition.string.begin}
+    end: '/'
+    endCaptures:
+      '0': {name: punctuation.definition.string.end}
+    name: string.regexp
 scopeName: source.fate
 uuid: b059aca9-7261-413b-a3f7-1c453843ca89
