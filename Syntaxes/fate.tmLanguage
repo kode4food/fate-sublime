@@ -52,10 +52,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#regex</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#keyword</string>
 				</dict>
 				<dict>
@@ -198,31 +194,6 @@
 					<string>#interpolation</string>
 				</dict>
 			</array>
-		</dict>
-		<key>regex</key>
-		<dict>
-			<key>begin</key>
-			<string>/</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>/</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.regexp</string>
 		</dict>
 		<key>statement</key>
 		<dict>
