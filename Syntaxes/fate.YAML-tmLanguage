@@ -28,7 +28,7 @@ repository:
   keyword:
     patterns:
     - {match: \b(and|or|like|mod|not|if|unless|else)\b, name: keyword.operator}
-    - {match: '([\-&~?+*\/|:@=(),\.\[\]<>{}])', name: keyword.operator}
+    - {match: '([\-~?+*\/|:@=(),\.\[\]<>{}])', name: keyword.operator}
   ml-string-double-quoted:
     begin: \"\"\"
     beginCaptures:
@@ -51,7 +51,7 @@ repository:
     - {include: '#interpolation'}
   statement:
     patterns:
-    - {match: \b(for|def|when|from|import|export|let|if|unless|as|in|else|end|where|select|return)\b,
+    - {match: \b(for|def|do|await|from|import|export|let|if|unless|as|in|else|end|where|select|return)\b,
       name: keyword.control}
   string:
     patterns:
