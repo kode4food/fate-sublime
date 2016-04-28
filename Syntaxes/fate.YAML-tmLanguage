@@ -6,7 +6,7 @@ repository:
   comment: {match: (#.*$), name: comment.line.number-sign}
   constant:
     patterns:
-    - {match: \b(self|true|false)\b, name: constant.language}
+    - {match: \b(self|true|false|global)\b, name: constant.language}
     - {match: '(([1-9][0-9]*|[0-9])(\.[0-9]+)?([eE][+-]?[0-9])?)', name: constant.numeric}
   expression:
     patterns:
