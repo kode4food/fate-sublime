@@ -1,6 +1,0 @@
-<snippet>
-  <content><![CDATA[(${1:args} → ${2:expr})]]></content>
-  <tabTrigger>la</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
-  <description>lambda function</description>
-</snippet>

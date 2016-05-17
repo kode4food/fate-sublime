@@ -5,6 +5,6 @@ else if ${3:else_condition}
 	$0
 end]]></content>
   <tabTrigger>ifei</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
+  <scope>source.fate</scope>
   <description>if … else if … end</description>
 </snippet>

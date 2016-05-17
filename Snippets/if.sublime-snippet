@@ -3,6 +3,6 @@
 	$0
 end]]></content>
   <tabTrigger>if</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
+  <scope>source.fate</scope>
   <description>if … end</description>
 </snippet>

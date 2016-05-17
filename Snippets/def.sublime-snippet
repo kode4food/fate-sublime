@@ -3,6 +3,6 @@
 	$0
 end]]></content>
   <tabTrigger>def</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
+  <scope>source.fate</scope>
   <description>def … end</description>
 </snippet>

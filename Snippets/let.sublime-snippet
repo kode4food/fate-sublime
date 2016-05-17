@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[let ${1:var} = ${2:expr}]]></content>
   <tabTrigger>let</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
+  <scope>source.fate</scope>
   <description>let … = …</description>
 </snippet>
