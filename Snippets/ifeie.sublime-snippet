@@ -7,6 +7,6 @@ else
 	$0
 end]]></content>
   <tabTrigger>ifeie</tabTrigger>
-  <scope>source.fate - meta.tag.other.html</scope>
+  <scope>source.fate</scope>
   <description>if … else if … else … end</description>
 </snippet>
