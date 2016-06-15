@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[${1:func} ∘ ${2:func}]]></content>
+  <tabTrigger>comp</tabTrigger>
+  <scope>source.fate</scope>
+  <description>compose functions: func ∘ func</description>
+</snippet>
