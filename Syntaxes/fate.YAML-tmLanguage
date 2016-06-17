@@ -28,7 +28,7 @@ repository:
   keyword:
     patterns:
     - {match: \b(and|or|like|mod|not|if|unless|else)\b, name: keyword.operator}
-    - {match: '([\-~?+*•o∘\/÷|:@!=≠(),\.\[\]<>≤≥{}])', name: keyword.operator}
+    - {match: '([\-~?+*•o∘\/÷|&:@!=≠(),\.\[\]<>≤≥{}])', name: keyword.operator}
   ml-string-double-quoted:
     begin: \"\"\"
     beginCaptures:
